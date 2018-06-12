@@ -3,6 +3,3 @@ set -e
 
 echo "---> Starting Spring Boot application"
 java -jar `find /opt/app-root -name *.jar`
-
-# Call default assemble script
-/usr/local/s2i/run
