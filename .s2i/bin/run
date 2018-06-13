@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
 
+echo "Copying artifact from $JAR_FILE_PATH/spring-boot.jar to /opt/app-root/springboot.jar"
+cp -p $JAR_FILE_PATH/spring-boot.jar /opt/app-root/spring-boot.jar
 echo "---> Starting Spring Boot application"
 java -jar `find /opt/app-root -name *.jar`
